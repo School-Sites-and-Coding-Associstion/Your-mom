@@ -15,7 +15,7 @@
     <h4 style="color:White;">Interstellar 6</h4><br>
     <a style="color:white;" href="https://clever.com">I go to clever!</a><br>
     <a style="color:white; text-decoration:none" href="https://clever.com">I don't have any text decoration (underline)!</a><br>
-    <select>
+    <select id="localS" onchange="localS();">
       <option>Taco</option>
       <option>Pizza</option>
       <option>Hamburger</option>
@@ -23,6 +23,10 @@
       <option>Ranch</option>
     </select>
     <script>
+      function localS() {
+        var thing = document.getElementById("localS").value
+        localStorage.setItem("", thing);
+      }
       function href() {
         var url = document.getElementById("hreftest").value;
         if (url == "Test") {
