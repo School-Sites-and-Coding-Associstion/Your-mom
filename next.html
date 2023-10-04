@@ -7,5 +7,10 @@
   <body style="background-color:black;">
     <h1 style="color:white;">I'm on another page!</h1>
     <p style="color:white;" id="output"></p>
+    <script>
+      let output = localStorage.getItem("test");
+      var outputArea = document.getElementById("output");
+      outputArea.innerHTML = output;
+    </script>
   </body>
 </html>
