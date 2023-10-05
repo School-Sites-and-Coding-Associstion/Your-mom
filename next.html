@@ -8,7 +8,7 @@
     <h1 style="color:white;">I'm on another page!</h1>
     <p style="color:white;" id="output"></p>
     <script>
-      const output = localStorage.getItem("test");
+      var output = localStorage.getItem("test");
       var outputArea = document.getElementById("output");
       outputArea.innerHTML = "You chose: " + output + " from the other page.";
     </script>
